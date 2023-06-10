@@ -1,0 +1,156 @@
+@media screen and (max-width: 1024px) {
+  .tabText {
+    font-size: 10px;
+  }
+}
+.slideContain {
+  margin: 0 5px;
+}
+@media screen and (max-width: 991px) {
+  .resImgBtn {
+    padding: 2px 10px;
+    font-size: 9px;
+  }
+  .tabText {
+    text-align: center;
+    line-height: 15px;
+  }
+  .mobile {
+    display: block;
+  }
+  header.headerMain.fixed-top {
+    flex-direction: column;
+  }
+  .leftHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+  }
+  .headerMenus {
+    display: flex;
+    margin: 10px;
+  }
+  .menuParent {
+    margin-right: 0;
+  }
+  .tabsParent {
+    display: flex;
+    margin-top: 170px;
+  }
+  .nav {
+    position: absolute;
+    top: 145px;
+    bottom: 0;
+    padding: 1em 0;
+    box-shadow: 4px -4px 12px rgba(0, 0, 0, 0.25),
+      -8px 8px 12px rgba(0, 0, 0, 0.25);
+    z-index: 5;
+  }
+  .nav.right {
+    right: -300px;
+    transition: 0.2s ease;
+  }
+  .nav.right.active {
+    right: 0;
+  }
+  .nav.left {
+    left: -300px;
+    transition: 0.2s ease;
+  }
+  .nav.left.active {
+    left: 0;
+  }
+  .chatbotMain {
+    max-width: 100%;
+  }
+  main {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 601px) {
+  .tabsParent {
+    display: flex;   
+    margin-top: 170px;
+    justify-content: space-around;
+  }
+
+  .resImgBtn {
+    padding: 0px 3px;
+    font-size: 4px;
+    right: 4px;
+    bottom: 2px;
+  }
+  .respBtn {
+    font-size: 10px;
+    line-height: 16px;
+    border-radius: 6px;
+    padding: 2px;
+  }
+  ul.tabs li {
+    font-size: 10px;
+  }
+  ul.tabs li {
+    padding: 12px 21px;
+  }
+  .defaultMsg, .defaultBlue  {
+    font-size: 12px;
+  }
+  .tabIndex {
+    max-width: 14%;
+height: 100%;}
+.menuParent {
+    margin-right: 0;
+    overflow-x: scroll;
+}
+.menuParent {
+    margin: 0px 8px;
+}
+.rightHeader {
+    padding-left: 0;
+}
+}
+
+@media screen and (max-width: 540px) {
+  /* .chatbotMain {
+        max-width: 73%;
+    } */
+
+  element.style {
+  }
+  .chatbot__message p:first-child {
+    margin-top: 0;
+  }
+  .defaultMsg,
+  .defaultBlue {
+    font-size: 12px;
+  }
+  .chatbotPrev {
+    left: -4%;
+    font-size: 14px;
+    color: #000;
+  }
+  .chatbotNext {
+    right: -4%;
+    font-size: 14px;
+    color: #000;
+  }
+  .tabIndex {
+    max-width: 27%;
+    height: 100%;
+}
+}
+
+@media screen and (max-width: 414px) {
+  .resImgBtn {
+    padding: 2px;
+    font-size: 3px;
+    right: 1px;
+    bottom: 2px;
+    line-height: 5px;
+    border-radius: 0;
+  }
+  ul.tabs li {
+    padding: 12px 2px;
+}
+}
