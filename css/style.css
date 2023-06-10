@@ -22,7 +22,9 @@ h5,
 h6 {
   margin-bottom: 0;
 }
-
+select::-ms-expand {
+  display: none;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -937,7 +939,12 @@ strong {
 }
 
 .slideimgCon {
-  height: 110px;
+  height: 160px;
+  opacity: 0;
+  transition: .5s;
+}
+.swiper-initialized .slideimgCon{
+  opacity: 1;
 }
 .nextIcn {
   background: none;
@@ -1433,7 +1440,7 @@ div#default {
   display: block;
 }
 .pausee {
-  background-image: url(../images/pause.png);
+  
   background-size: 7px;
   background-position: center;
   background-color: transparent;
@@ -1447,7 +1454,23 @@ div#default {
   text-overflow: "";
   border: 0;
   font-size: 13px;
+  position: relative;
 }
+.resIconss .resIcn2{
+  position: relative;
+}
+.resIconss .resIcn2:not(.remove_pause)::after{
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background: url(../images/pause.png) no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .pausee option {
   color: #000;
 }
@@ -1541,6 +1564,9 @@ div#default {
   transition: 1s;
   right: 13px;
   cursor: pointer;
+}
+.pin.icon svg{
+  fill: #666666;
 }
 .wordCounting{
   opacity: 0;
