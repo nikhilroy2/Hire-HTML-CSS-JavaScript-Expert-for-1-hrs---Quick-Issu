@@ -442,17 +442,17 @@ main {
   letter-spacing: 0.2px;
   font-weight: 500;
   padding-left: 7px;
-  color: #0000;
-  background: linear-gradient(-90deg, #fff 5px, #0000 0) 10px 0,
+  color: #000000;
+  /* background: linear-gradient(-90deg, #fff 5px, #0000 0) 10px 0,
     linear-gradient(#000 0 0) 0 0;
   background-size: calc(400 * 1ch) 200%;
   -webkit-background-clip: padding-box, text;
   background-clip: padding-box, text;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
-.type:not(.no_type_animate){
+/* .type:not(.no_type_animate){
   animation: b 0.7s infinite steps(1), t calc(400 * 0.1s) steps(400) forwards;
-}
+} */
 
 @keyframes t {
   from {
